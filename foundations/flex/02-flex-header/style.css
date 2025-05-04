@@ -1,6 +1,23 @@
+* {
+  margin: 0;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 
+    You can use justify-content: space-between instead of
+    having to justify-content: center and adding a 
+    margin: auto like I did to the logo
+    I believe it serves the exact same purpose
+  */
+  /* justify-content: space-between; */
+  gap: 20px;
+  padding: 10px;
+
 }
 
 .logo {
@@ -9,12 +26,24 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  padding: 10px;
 }
+
+/* .left {
+  margin: 0;
+  padding: 10px;
+}
+
+.right {
+  padding: 10px;
+} */
 
 a {
   font-size: 22px;
